@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cover Drive"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/coverdrive"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A drive is a straight-batted shot, played by swinging the bat in a vertical arc through the line of the ball, hitting the ball in front of the batsman along the ground.
+                It is one of the most common shots in a batsman's armoury and often the first shot taught to junior cricketers.
+This is an attacking stroke, played to a full, wide of off stump delivery.
+Keep a relaxed, balanced stance,A drive is a straight-batted shot, played by swinging the bat in a vertical arc through the line of the ball, hitting the ball in front of the batsman along the ground.
+                It is one of the most common shots in a batsman's armoury and often the first shot taught to junior cricketers.
+This is an attacking stroke, played to a full, wide of off stump delivery.
+Keep a relaxed, balanced stance, with your head and eyes level.
+Using your normal backswing, step forward; your leading foot should have a comfortable stride to the pitch of the ball."
+                android:padding="10dp"
+
+                android:textColor="#0B4C5F"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:alpha="0.6"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/previous"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:alpha="0.6"/>
+</RelativeLayout>

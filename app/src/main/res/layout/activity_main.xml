@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sub.subfirstclass.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello SFUB!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMessage"
+        android:layout_marginLeft="10dp"
+        android:hint="Insert UserName"
+        android:maxLength="25"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUserName"
+        android:layout_alignLeft="@+id/editTextUserName"
+        android:hint="Password"
+        android:maxLength="12"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:hint="Email"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:layout_alignLeft="@+id/editTextUserName"/>
+
+    <EditText
+        android:id="@+id/editTextCGPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEmail"
+        android:hint="Your CGPA"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:layout_alignLeft="@+id/editTextUserName"/>
+
+    <EditText
+        android:id="@+id/editTextBloodGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Blood Group"
+        android:layout_below="@+id/editTextCGPA"
+        android:inputType="text"
+        android:maxLength="3"
+        android:layout_alignLeft="@+id/editTextUserName"/>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextBloodGroup"
+        android:hint="PhoneNo"
+        android:maxLength="14"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/editTextUserName"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPhone"
+        android:text="SAVE"
+        android:onClick="saveData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"/>
+</RelativeLayout>
